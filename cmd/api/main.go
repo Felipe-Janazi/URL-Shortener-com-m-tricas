@@ -9,10 +9,10 @@ import (
     "syscall"
     "time"
 
-    "github.com/seu-user/url-shortener/internal/config"
-    "github.com/seu-user/url-shortener/internal/handler"
-    "github.com/seu-user/url-shortener/internal/repository"
-    "github.com/seu-user/url-shortener/internal/service"
+    "github.com/Felipe-Janazi/url-shortener/internal/config"
+    "github.com/Felipe-Janazi/url-shortener/internal/handler"
+    "github.com/Felipe-Janazi/url-shortener/internal/repository"
+    "github.com/Felipe-Janazi/url-shortener/internal/service"
 )
 
 func main() {
