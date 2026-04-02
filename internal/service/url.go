@@ -49,7 +49,7 @@ func (s *URLService) Shorten(ctx context.Context, rawURL string) (*model.URL, er
     }
 
     // Gera um código de 7 caracteres base64url (ex: "aB3xK7q").
-    // 7 chars = ~3.5 trilhões de combinações — suficiente para este projeto.
+    // 7 chars = ~3.5 trilhões de combinações
     code, err := generateCode(7)
     if err != nil {
         return nil, fmt.Errorf("erro ao gerar código: %w", err)

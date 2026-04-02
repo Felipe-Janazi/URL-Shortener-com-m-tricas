@@ -11,10 +11,13 @@ RUN go mod download
 
 # Agora copia o código e compila.
 COPY . .
-RUN CGO_ENABLED=0 \       # binário estático, sem dependências de .so
-    GOOS=linux \           # compila para Linux (necessário se você usa macOS/Windows)
+RUN CGO_ENABLED=0 \       
+# binário estático, sem dependências de .so
+    GOOS=linux \           
+    # compila para Linux (necessário se você usa macOS/Windows)
     go build \
-    -ldflags="-s -w" \     # -s: sem tabela de símbolos, -w: sem DWARF → binário menor
+    -ldflags="-s -w" \     
+    # -s: sem tabela de símbolos, -w: sem DWARF → binário menor
     -o api ./cmd/api
 
 # ── Estágio 2: Runtime ─────────────────────────────────────────────────────────
