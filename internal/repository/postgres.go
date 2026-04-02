@@ -6,7 +6,7 @@ import (
     "time"
 
     "github.com/jackc/pgx/v5/pgxpool"
-    "github.com/seu-user/url-shortener/internal/model"
+    "github.com/Felipe-Janazi/url-shortener/internal/model"
 )
 
 type PostgresRepo struct {

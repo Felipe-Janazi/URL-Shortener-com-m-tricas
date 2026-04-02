@@ -9,7 +9,7 @@ import (
     "net/url"           // validação de URL
     "time"
 
-    "github.com/seu-user/url-shortener/internal/model"
+    "github.com/Felipe-Janazi/url-shortener/internal/model"
 )
 
 // ErrInvalidURL é retornado quando a URL fornecida não é válida.

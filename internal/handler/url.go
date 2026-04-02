@@ -6,8 +6,8 @@ import (
     "log/slog"
     "net/http"
 
-    "github.com/seu-user/url-shortener/internal/model"
-    "github.com/seu-user/url-shortener/internal/service"
+    "github.com/Felipe-Janazi/url-shortener/internal/model"
+    "github.com/Felipe-Janazi/url-shortener/internal/service"
 )
 
 // URLHandler só conhece HTTP — nenhuma regra de negócio vive aqui.
